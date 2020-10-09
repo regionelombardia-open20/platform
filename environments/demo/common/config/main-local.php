@@ -1,11 +1,11 @@
 <?php
 
 /**
- * Lombardia Informatica S.p.A.
+ * Aria S.p.A.
  * OPEN 2.0
  *
  *
- * @package    lispa\amos\basic\template
+ * @package    open20\amos\basic\template
  * @category   CategoryName
  */
 
@@ -41,6 +41,18 @@ $components['mailer'] = [
                 //'encryption' => 'tls',
             ],
         ];
+        
+$components['i18n'] = [
+            'translations' => [
+				'extraCategoryPaths' => [
+                    'amosadmin' => '@common/translation/amosadmin/i18n',
+                    'amoscommunity' => '@common/translation/amoscommunity/i18n',
+                    'amosinvitations' => '@common/translation/amosinvitations/i18n',
+                    'amosmyactivities' => '@common/translation/amosmyactivities/i18n',
+                    'amosorganizzazioni' => '@common/translation/amosorganizzazioni/i18n',
+				],
+            ],
+        ];
 /*---------- end: COMPONENTS OTHERS --------*/
 
 /*---------- begin: MODULES AMOS --------*/
@@ -57,14 +69,14 @@ $modules['admin'] = [
     ]
 ];
 $modules['community'] = [
-    'class' => 'lispa\amos\community\AmosCommunity',
+    'class' => 'open20\amos\community\AmosCommunity',
 ];
 $modules['cwh'] = [
-    'class' => 'lispa\amos\cwh\AmosCwh',
+    'class' => 'open20\amos\cwh\AmosCwh',
     'rbacEnabled' => false
 ];
 $modules['tag'] = [
-    'class' => 'lispa\amos\tag\AmosTag',
+    'class' => 'open20\amos\tag\AmosTag',
 ];
 /*---------- end: MODULES AMOS --------*/
 
@@ -72,8 +84,8 @@ $modules['tag'] = [
 /*---------- end: MODULES OTHERS --------*/
 
 $config = [
-//    'bootstrap' => $bootstrap,
-//    'components' => $components,
+    'bootstrap' => $bootstrap,
+    'components' => $components,
     'modules' => $modules,
 ];
 

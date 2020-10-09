@@ -1,11 +1,11 @@
 <?php
 
 /**
- * Lombardia Informatica S.p.A.
+ * Aria S.p.A.
  * OPEN 2.0
  *
  *
- * @package    lispa\amos\basic\template
+ * @package    open20\amos\basic\template
  * @category   CategoryName
  */
 
@@ -52,26 +52,6 @@ return [
         ],
         'setExecutable' => [
             'yii',
-        ],
-        'setCookieValidationKey' => [
-            'backend/config/main-local.php',
-            'frontend/config/main-local.php',
-        ],
-    ],
-    'Local' => [
-        'path' => 'local',
-        'setWritable' => [
-            'backend/runtime',
-            'backend/web/assets',
-            'common/uploads',
-            'common/uploads/store',
-            'common/uploads/temp',
-            'frontend/runtime',
-            'frontend/web/assets',
-        ],
-        'setExecutable' => [
-            'yii',
-            'tests/codeception/bin/yii',
         ],
         'setCookieValidationKey' => [
             'backend/config/main-local.php',

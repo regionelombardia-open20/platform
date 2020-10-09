@@ -1,11 +1,11 @@
 <?php
 
 /**
- * Lombardia Informatica S.p.A.
+ * Aria S.p.A.
  * OPEN 2.0
  *
  *
- * @package    lispa\amos\basic\template
+ * @package    open20\amos\basic\template
  * @category   CategoryName
  */
 
@@ -13,12 +13,16 @@ return [
     'components' => [
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=localhost;dbname=database',
-            'username' => 'root',
-            'password' => '',
+            'dsn' => 'mysql:host=localhost;dbname=db_name',
+            'username' => 'db_user',
+            'password' => 'db_passwd',
             'charset' => 'utf8',
             'enableSchemaCache' => true,
             'schemaCacheDuration' => 88000,
+            'schemaCache' => 'schemaCache',
+            'attributes'=>[
+                PDO::ATTR_PERSISTENT => true
+            ]
         ],
         'mailer' => [
             'class' => 'yii\swiftmailer\Mailer',

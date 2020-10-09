@@ -1,11 +1,11 @@
 <?php
 
 /**
- * Lombardia Informatica S.p.A.
+ * Aria S.p.A.
  * OPEN 2.0
  *
  *
- * @package    lispa\amos\basic\template
+ * @package    open20\amos\basic\template
  * @category   CategoryName
  */
 
@@ -13,13 +13,13 @@ return [
     'assistance' => [
         'enabled' => true, //Enable the assistance button
         'type' => 'email', //Assistance button mode: url or email
-        'email' => 'help@example.com', //Assistance mail
+        'email' => 'info@example.com', //Assistance mail
         'url' => '/path/to/assistance/page' //Url to the assistance page
     ],
     'isDemo' => true,
     'demoModelBlackList' => [
-        'lispa\amos\cwh\base\ModelContentInterface',
-        'lispa\amos\community\models\Community'
+        'open20\amos\cwh\base\ModelContentInterface',
+        'open20\amos\community\models\Community'
     ],
     'google_places_api_key' => '',
     'google_recaptcha_site_key' => '',

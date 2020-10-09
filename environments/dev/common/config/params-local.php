@@ -1,11 +1,11 @@
 <?php
 
 /**
- * Lombardia Informatica S.p.A.
+ * Aria S.p.A.
  * OPEN 2.0
  *
  *
- * @package    lispa\amos\basic\template
+ * @package    open20\amos\basic\template
  * @category   CategoryName
  */
 
@@ -22,4 +22,5 @@ return [
         'frontendUrl' => 'FRONTEND_URL',
         'backendUrl' => 'FRONTEND_URL',
     ],
+    'logoMail' => '/img/logo.png' //default logo backend/web/img/logo.png
 ];

@@ -1,11 +1,11 @@
 <?php
 
 /**
- * Lombardia Informatica S.p.A.
+ * Aria S.p.A.
  * OPEN 2.0
  *
  *
- * @package    lispa\amos\basic\template
+ * @package    open20\amos\basic\template
  * @category   CategoryName
  */
 
@@ -27,16 +27,15 @@ $components = [
 
 /*---------- begin: MODULES AMOS --------*/
 $modules['chat'] = [
-    'class' => 'lispa\amos\chat\AmosChat',
+    'class' => 'open20\amos\chat\AmosChat',
 ];
 $modules['comments'] = [
-    'class' => 'lispa\amos\comments\AmosComments',
+    'class' => 'open20\amos\comments\AmosComments',
     'enableMailsNotification' => false,
     'modelsEnabled' => [
-        'lispa\amos\discussioni\models\DiscussioniTopic',
-        'lispa\amos\documenti\models\Documenti',
-        'lispa\amos\events\models\Event',
-        'lispa\amos\news\models\News',
+        'open20\amos\discussioni\models\DiscussioniTopic',
+        'open20\amos\documenti\models\Documenti',
+        'open20\amos\news\models\News',
     ],
 ];
 $modules['cwh'] = [
@@ -47,49 +46,39 @@ $modules['dashboard'] = [
         'useWidgetGraphicOrder' => true,
 ];
 $modules['discussioni'] = [
-    'class' => 'lispa\amos\discussioni\AmosDiscussioni',
+    'class' => 'open20\amos\discussioni\AmosDiscussioni',
 ];
 $modules['documenti'] = [
-    'class' => 'lispa\amos\documenti\AmosDocumenti',
+    'class' => 'open20\amos\documenti\AmosDocumenti',
     'params' => [
         'site_publish_enabled' => true,
         'site_featured_enabled' => true
     ],
 ];
-$modules['events'] = [
-    'class' => 'lispa\amos\events\AmosEvents',
-];
-$modules['faq'] = [
-    'class' => 'lispa\amos\faq\AmosFaq',
-];
 $modules['favorites'] = [
-    'class' => 'lispa\amos\favorites\AmosFavorites',
+    'class' => 'open20\amos\favorites\AmosFavorites',
     'modelsEnabled' => [
-        'lispa\amos\discussioni\models\DiscussioniTopic',
-        'lispa\amos\documenti\models\Documenti',
-        'lispa\amos\news\models\News',
+        'open20\amos\discussioni\models\DiscussioniTopic',
+        'open20\amos\documenti\models\Documenti',
+        'open20\amos\news\models\News',
     ]
 ];
-$modules['inforeq'] = [
-    'class' => 'lispa\amos\inforeq\AmosInforeq',
-];
 $modules['news'] = [
-    'class' => 'lispa\amos\news\AmosNews',
+    'class' => 'open20\amos\news\AmosNews',
     'params' => [
         'site_publish_enabled' => true,
         'site_featured_enabled' => true
     ]
 ];
 $modules['privileges'] = [
-    'class' => 'lispa\amos\privileges\AmosPrivileges',
+    'class' => 'open20\amos\privileges\AmosPrivileges',
 ];
 $modules['report'] = [
-    'class' => 'lispa\amos\report\AmosReport',
+    'class' => 'open20\amos\report\AmosReport',
     'modelsEnabled' => [
-        'lispa\amos\discussioni\models\DiscussioniTopic',
-        'lispa\amos\documenti\models\Documenti',
-        'lispa\amos\events\models\Event',
-        'lispa\amos\news\models\News',
+        'open20\amos\discussioni\models\DiscussioniTopic',
+        'open20\amos\documenti\models\Documenti',
+        'open20\amos\news\models\News',
     ],
 ];
 if (isset($modules['tag'])) {
